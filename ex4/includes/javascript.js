@@ -1,5 +1,5 @@
-window.onload=function(){
-	};
+// window.onload=function(){
+	// };
 
 var i=0;
 function checkAddress(){
@@ -10,16 +10,13 @@ function checkAddress(){
      // addToAddress.appendChild(addressError);
     var address=addToAddress.value;
 	for(i=0; i<4; i++){
-		console.log(i);
 		if(address==arrAddress[i]){
-				console.log('yes');
 			 	 return true;	
 		}
 	}
-		 	console.log('no');
 		 	//addToAddress.innerHTML = 'blablabla';
 		 	addressError.innerHTML = "You are required to enter the one of the following four addresses: israel, usa, asia, india";
-		 	 addTo.appendChild(addressError);
+		 	addTo.appendChild(addressError);
 			return false;
 };
 	 
